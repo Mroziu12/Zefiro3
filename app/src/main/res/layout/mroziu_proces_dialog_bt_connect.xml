@@ -20,5 +20,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="10dp"
-        android:text="Łączenie z urządzeniem..." />
+        android:text="@string/proces_dialog_bt_connect_text" />
 </LinearLayout>

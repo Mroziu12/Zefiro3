@@ -87,15 +87,35 @@ public class mroziu_BtActivity extends AppCompatActivity implements mroziu_MyBtA
 
 
                 if(device.getName()!=null){
-                    mBTDevices.add(device);
-                    mroziu_MyBtAdapter myAdapter = new mroziu_MyBtAdapter(context1, mBTDevices,mroziu_BtActivity.this);
-                    recyclerView.setAdapter(myAdapter);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(context1));
+
+                    //char[] stZtab ={'Z','e','f','i','r','o'};
+                    char[] stZtab ={'H','C','-','0'};
+                    boolean flag=true;
+
+                    for (int j=0;j<stZtab.length;j++){
+                        if(stZtab[j]!=(device.getName().charAt(j))){
+                            flag=false;
+                            break;
+                        }
+                    }
+
+
+                    if(flag){
+
+                            mBTDevices.add(device);
+                            mroziu_MyBtAdapter myAdapter = new mroziu_MyBtAdapter(context1, mBTDevices,mroziu_BtActivity.this);
+                            recyclerView.setAdapter(myAdapter);
+                            recyclerView.setLayoutManager(new LinearLayoutManager(context1));
+                            btSearchDialog.dismissBtSearchDialog();
+
+                    }
+
+
                 }else{
                     Log.d(TAG, "onReceive: Znaleziono Puste");
                 }
 
-                btSearchDialog.dismissBtSearchDialog();
+
             }
         }
     };

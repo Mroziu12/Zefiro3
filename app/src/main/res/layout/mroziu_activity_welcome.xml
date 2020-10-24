@@ -52,6 +52,6 @@
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/mroziu_ripple_effect_button"
-        android:text="Zaczynajmy!"/>
+        android:text="@string/btnZaczynajmy"/>
 
 </RelativeLayout>

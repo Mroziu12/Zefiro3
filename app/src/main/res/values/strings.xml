@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ZefiroApp</string>
-    <string name="pop_topic">Błędne dane!</string>
-    <string name="pop_text">Wybrane wifi lub wprowadzone haslo jest nieprawidłowe</string>
+    <string name="pop_topic_neg">Błędne dane!</string>
+    <string name="pop_text_neg">Wybrane wifi lub wprowadzone haslo jest nieprawidłowe</string>
     <string name="pop_topic_pos">Wszytko OK!</string>
     <string name="pop_text_pos">Zefiro pomyślnie połączyło się z twoim Wi-Fi</string>
     <string name="proces_dialog_check_topic">Łączenie z Wi-Fi</string>
@@ -12,4 +12,16 @@
         hasła. Podczas Konfiguracji konieczne będzie zezwolenie aplikacji na korzystanie z niektórych funkcji
         urządzenia (Bluetooth, Wi-Fi, lokalizacja).
 </string>
+    <string name="btnSzukajBt">Szukaj</string>
+    <string name="wybrane_urzadzenie">Wybrane urzadzenie:</string>
+    <string name="btnDalej">Dalej</string>
+    <string name="btnZaczynajmy">Zaczynajmy!</string>
+    <string name="editTextWifiPassHint">Haslo do Wifi</string>
+    <string name="wybrana_siec">Wybrana siec:</string>
+    <string name="btnPrzeslij_dane">Przeslij Dane</string>
+    <string name="pop_btn_neg">Powrót do Wi-Fi</string>
+    <string name="pop_btn_pos">Dalej</string>
+    <string name="proces_dialog_bt_connect_text">Łączenie z urządzeniem...</string>
+    <string name="proces_dialog_bt_search_text">Wyszukiwanie urządzeń BT...</string>
+    <string name="proces_dialog_wifi_search_text">Wyszukiwanie sieci Wi-Fi...</string>
 </resources>

@@ -17,7 +17,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wyszukiwanie urządzeń BT..."
+        android:text="@string/proces_dialog_bt_search_text"
         android:layout_marginStart="10dp"
         android:layout_gravity="center_vertical"/>
 </LinearLayout>
