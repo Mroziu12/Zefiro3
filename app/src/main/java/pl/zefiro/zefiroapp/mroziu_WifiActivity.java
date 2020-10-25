@@ -250,6 +250,10 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
 
+                Intent intent = new Intent(mroziu_WifiActivity.this, Login.class);
+                Log.d(TAG, "openMainActivity: dziala");
+                startActivity(intent);
+
             }
         });
 
@@ -279,7 +283,7 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
 
         @Override
         protected Void doInBackground(Void... arg0) {
-            czytajWiadomosc();
+           // czytajWiadomosc();
            // PokazDialog();
             return null;
         }
@@ -287,11 +291,11 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
         @Override
         protected void onPostExecute(final Void unused) {
             wiFiCheckDialog.dismissWiFiCheckDialog();
-            if (b == 1) {
+           // if (b == 1) {
                 pokazDialogPositive();
-            } else {
-               pokazDialogNegative();
-            }
+            //} else {
+           //    pokazDialogNegative();
+          //  }
         }
     }
 }
