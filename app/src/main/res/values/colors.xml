@@ -27,4 +27,20 @@
         <color name="popBtnPos">#0abde3</color>
         <color name="dialogCheckBG">#dfe6e9</color>
         <color name="dialogCheckButton">#74b9ff</color>
+        <color name="basic">#4D774E</color>
+        <color name="jasniejszy">#9DC88D</color>
+        <color name="bciemniejszy">#164A41</color>
+        <color name="ciemniejszy">#21492f</color>
+        <color name="szary1">#252525</color>
+        <color name="szary2">#181818</color>
+
+        <color name="gLight">#2ec1ac</color>
+        <color name="gDark">#3e978b</color>
+        <color name="yStrong">#d2e603</color>
+        <color name="yweak">#eff48e</color>
+
+
+
+
+
 </resources>

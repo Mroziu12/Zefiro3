@@ -279,7 +279,6 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
 
         @Override
         protected Void doInBackground(Void... arg0) {
-            // put your code here
             czytajWiadomosc();
            // PokazDialog();
             return null;
@@ -291,7 +290,7 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
             if (b == 1) {
                 pokazDialogPositive();
             } else {
-                pokazDialogNegative();
+               pokazDialogNegative();
             }
         }
     }

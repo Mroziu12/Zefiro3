@@ -21,35 +21,6 @@ public class mroziu_MyBtAdapter extends RecyclerView.Adapter<mroziu_MyBtAdapter.
 
     public mroziu_MyBtAdapter(Context ct, ArrayList<BluetoothDevice> name1, OnCardListener onCardListener){
         context=ct;
-//        //char[] stZtab ={'Z','e','f','i','r','o'};
-//        char[] stZtab ={'H','C','-','0'};
-//        int i=0;
-//        boolean flag=false;
-
-//        while (i<name1.size()){
-//            flag=false;
-//            for (int j=0;j<stZtab.length;j++){
-//                if(stZtab[j]!=(name1.get(i).getName().charAt(j))){
-//                    name1.remove(i);
-//                    flag=true;
-//                    break;
-//                }
-//                if (flag) break;
-//            }
-//            i++;
-//        }
-//        while (i<name1.size()){
-//            Log.d(TAG, "MyAdapter: Porownoje"+chZ+" i "+ name1.get(i).getName().charAt(0));
-//                if(chZ!=name1.get(i).getName().charAt(0)){
-//                    Log.d(TAG, "MyAdapter: Porownoje"+chZ+" i "+ name1.get(i).getName().charAt(0));
-//                    name1.remove(i);
-//
-//                }
-//                i++;
-//        }
-
-
-
         names=name1;
         this.onCardListener=onCardListener;
     }
