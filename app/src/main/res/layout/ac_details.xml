@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundBasic"
+    tools:context=".Details">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_but_scroll_temp"
+                style="@style/but_scroll"
+                android:text="TEMP"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/id_but_scroll_hum"
+                style="@style/but_scroll"
+                android:text="WILGOTNOŚĆ" />
+
+            <Button
+                android:id="@+id/id_but_scroll_press"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="CIŚNIENIE" />
+
+            <Button
+                android:id="@+id/id_but_scroll_pm1"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="PM 1" />
+
+            <Button
+                android:id="@+id/id_but_scroll_pm25"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="PM 2.5" />
+
+            <Button
+                android:id="@+id/id_but_scroll_pm10"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="PM 10" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_but_scroll_day"
+                style="@style/but_scroll"
+                android:text="Dzień" />
+
+            <Button
+                android:id="@+id/id_but_scroll_week"
+                style="@style/but_scroll"
+                android:text="Tydzień" />
+
+            <Button
+                android:id="@+id/id_but_scroll_month"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="Miesiąc" />
+
+            <Button
+                android:id="@+id/id_but_scroll_halfYear"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="Pół roku" />
+
+            <Button
+                android:id="@+id/id_but_scroll_year"
+                style="@style/but_scroll"
+                android:layout_weight="1"
+                android:text="Rok" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/butFont" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/id_details_graph1" />
+
+</LinearLayout>

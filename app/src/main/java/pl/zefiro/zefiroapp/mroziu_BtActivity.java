@@ -47,6 +47,11 @@ public class mroziu_BtActivity extends AppCompatActivity implements mroziu_MyBtA
 
     public ArrayList<BluetoothDevice> mBTDevices = new ArrayList<>();
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
 
     private final BroadcastReceiver mBroadcastReceiver1 = new BroadcastReceiver() {
         public void onReceive(Context context, Intent intent) {
@@ -87,8 +92,8 @@ public class mroziu_BtActivity extends AppCompatActivity implements mroziu_MyBtA
 
                 if(device.getName()!=null){
 
-                    //char[] stZtab ={'Z','e','f','i','r','o'};
-                    char[] stZtab ={'H','C','-','0'};
+                    char[] stZtab ={'Z','e','f','i','r','o'};
+                    //char[] stZtab ={'H','C','-','0'};
                     boolean flag=true;
 
                     for (int j=0;j<stZtab.length;j++){
@@ -191,7 +196,7 @@ public class mroziu_BtActivity extends AppCompatActivity implements mroziu_MyBtA
         enableDisableBT();
 
 
-
+        checkBTPermissions();
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -211,17 +216,19 @@ public class mroziu_BtActivity extends AppCompatActivity implements mroziu_MyBtA
             Log.d(TAG, "btnDiscover: Canceling discovery.");
 
             //check BT permissions in manifest
-            checkBTPermissions();
+
+            Log.d(TAG, "szukajUrzadzen: sprawdziłem pwrmisje ");
             mBluetoothAdapter.startDiscovery();
+            Log.d(TAG, "szukajUrzadzen: po disoevery");
             IntentFilter discoverDevicesIntent = new IntentFilter(BluetoothDevice.ACTION_FOUND);
             registerReceiver(mBroadcastReceiver3, discoverDevicesIntent);
         }
         if (!mBluetoothAdapter.isDiscovering()) {
 
             //check BT permissions in manifest
-            checkBTPermissions();
-
+            Log.d(TAG, "szukajUrzadzen: spraedzilem permisje");
             mBluetoothAdapter.startDiscovery();
+            Log.d(TAG, "szukajUrzadzen: po start discovery");
             IntentFilter discoverDevicesIntent = new IntentFilter(BluetoothDevice.ACTION_FOUND);
             registerReceiver(mBroadcastReceiver3, discoverDevicesIntent);
         }

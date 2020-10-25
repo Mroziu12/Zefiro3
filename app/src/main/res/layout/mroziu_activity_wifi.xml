@@ -7,17 +7,32 @@
     tools:context=".mroziu_BtActivity"
     android:background="@color/myAppDarkBg">
 
-    <EditText
-        android:id="@+id/etWifiPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/text"
         android:layout_marginTop="20dp"
-        android:hint="@string/editTextWifiPassHint"
         android:padding="10dp"
-        android:textColor="@color/myAppDarkBg"
-        android:background="@drawable/mroziu_input_wifi_pass"/>
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextColor="@color/myLightText"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etWifiPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/editTextWifiPassHint"
+            android:padding="10dp"
+            android:textColor="@color/myAppDarkBg"
+            android:background="@drawable/mroziu_input_wifi_pass"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <RelativeLayout
         android:id="@+id/listWifiContainer"
@@ -28,7 +43,7 @@
         android:layout_marginTop="20dp"
         android:paddingBottom="20dp"
         android:background="@drawable/mroziu_list_background"
-        android:layout_below="@id/etWifiPass">
+        android:layout_below="@id/text">
 
         <TextView
             android:id="@+id/tvWybranaSiec"

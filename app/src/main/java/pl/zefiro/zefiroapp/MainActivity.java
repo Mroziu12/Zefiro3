@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     Context context = this;
 
     @Override
+    public void onBackPressed() {
+
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         if (!isConnected(context)){
@@ -38,13 +43,20 @@ public class MainActivity extends AppCompatActivity {
             },3000);
             Log.d(TAG, "onClick: Pokazano dialog");
         }else{
-            if(isLogged()){
-                Intent intent = new Intent(MainActivity.this, Home.class);
-                startActivity(intent);
-            }else{
-                Intent intent1 = new Intent(MainActivity.this, mroziu_WelcomeActivity.class);
-                startActivity(intent1);
-            }
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if(isLogged()){
+                        Intent intent = new Intent(MainActivity.this, Home.class);
+                        startActivity(intent);
+                    }else{
+                        Intent intent1 = new Intent(MainActivity.this, mroziu_WelcomeActivity.class);
+                        startActivity(intent1);
+                    }
+                }
+            },3000);
+
         }
     }
 

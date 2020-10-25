@@ -26,6 +26,10 @@ public class mroziu_WelcomeActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+
+    }
 
     private void openMainActivity() {
         Log.d(TAG, "openMainActivity: dziala");

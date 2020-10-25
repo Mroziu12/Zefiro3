@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBasic"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/id_settings_hardReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        style="@style/Button"
+        android:layout_weight="0"
+        android:text="Resetuj Ustawienia" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Nowe hasło" />
+
+    <EditText
+        android:id="@+id/id_settings_et_pass1"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="haslo"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Powtórz hasło" />
+
+    <EditText
+        android:id="@+id/id_settings_et_pass2"
+        style="@style/EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="haslo"
+        android:inputType="textPassword" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Ustaw kolor: "
+            android:textColor="@color/font" />
+
+        <Button
+            android:id="@+id/id_settings_pickColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/id_settings_tv_type_light"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tryb oświetlenia"
+        android:textColor="@color/butFont" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="5dp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_settings_but_1"
+
+                style="@style/but_type_light"
+                android:text="Stały" />
+
+            <Button
+                android:id="@+id/id_settings_but_2"
+                style="@style/but_type_light"
+                android:text="Tęcza 1" />
+
+            <Button
+                android:id="@+id/id_settings_but_3"
+                style="@style/but_type_light"
+                android:text="Tęcza 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/id_settings_but_4"
+                style="@style/but_type_light"
+                android:text="Fala random" />
+
+            <Button
+                android:id="@+id/id_settings_but_5"
+                style="@style/but_type_light"
+                android:text="Fade" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/id_settings_but_saveall"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:layout_gravity="bottom|center"
+        android:text="Zapisz" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

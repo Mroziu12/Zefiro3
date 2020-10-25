@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeSmall">12dp</dimen>
+    <dimen name="textSizeMidium">15dp</dimen>
+    <dimen name="textSizeNormal">18dp</dimen>
+    <dimen name="textSizeBig">22dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

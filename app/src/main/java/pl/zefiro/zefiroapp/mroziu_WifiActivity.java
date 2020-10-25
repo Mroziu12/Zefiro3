@@ -274,6 +274,11 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
         Log.d(TAG, "onCardWifiClick: Wi-Fi name = " + wifiName);
     }
 
+    @Override
+    public void onBackPressed() {
+
+    }
+
     private class Zadanie extends AsyncTask<Void, Void, Void> {
 
         @Override
@@ -287,6 +292,7 @@ public class mroziu_WifiActivity extends AppCompatActivity implements mroziu_MyW
            // PokazDialog();
             return null;
         }
+
 
         @Override
         protected void onPostExecute(final Void unused) {
